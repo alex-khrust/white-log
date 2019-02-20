@@ -1,0 +1,78 @@
+section.home
+  .container
+    flex-flow: column
+
+.home-menu
+  width: 100%
+  height: auto
+  display: flex
+  flex-flow: wrap
+  justify-content: space-between
+  align-content: space-between
+  margin: 70px 0 40px
+  li
+    width: 370px
+    height: 151px
+    border-radius: 30px
+    box-shadow: 0 4px 16px 0 rgba(43, 61, 141, 0.07)
+    background-color: #ffffff
+    margin-bottom: 30px
+    overflow: hidden
+    a
+      width: 100%
+      height: 100%
+      display: flex
+      justify-content: center
+      align-items: center
+      font: 600 20px Montserrat-SemiBold
+    img
+      width: auto
+      height: 35px
+      object-fit: contain
+      margin-right: 19px
+
+    &:nth-child(1)
+      a
+        color: $weird-green
+      &:hover
+        border: 2px solid $weird-green
+    &:nth-child(2)
+      a
+        color: $dusty-orange
+      &:hover
+        border: 2px solid $dusty-orange
+    &:nth-child(3)
+      a
+        color: $blue-purple
+      &:hover
+        border: 2px solid $blue-purple
+    &:nth-child(4)
+      a
+        color: $medium-pink
+      &:hover
+        border: 2px solid $medium-pink
+    &:nth-child(5)
+      a
+        color: $dusk-blue
+      &:hover
+        border: 2px solid $dusk-blue
+    &:nth-child(6)
+      a
+        color: $bright-sky-blue
+      &:hover
+        border: 2px solid $bright-sky-blue
+.home-description
+  width: 100%
+  height: auto
+  display: flex
+  align-items: center
+  justify-content: center
+  font: 15px Montserrat-Regular
+  font-weight: normal
+  font-style: normal
+  font-stretch: normal
+  line-height: 1.47
+  letter-spacing: normal
+  text-align: center
+  color: #565656
+  margin: 21px 0 88px

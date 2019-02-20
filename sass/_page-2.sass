@@ -1,0 +1,278 @@
+section.page-2__1
+  .container
+
+.title
+  width: 100%
+  height: auto
+  margin: 35px 0 41px
+  text-align: left
+  h2
+    font: bold 35px Montserrat-Bold
+    color: $dusk-blue
+    margin-bottom: 22px
+  p
+    font: 15px Montserrat-Regular
+    color: $greyish-brown
+
+form
+  width: 100%
+  height: auto
+  p
+    width: 100%
+    height: auto
+    display: flex
+    margin-bottom: 20px
+    align-items: center
+    &>span
+      font: 20px Montserrat-SemiBold
+      color: $charcoal-grey
+      margin-right: 107px
+
+  input[type="text"], select, .select, .file
+    width: 100%
+    height: 50px
+    border-radius: 25px
+    background-color: #f0f2fa
+    margin-right: 0
+
+  textarea
+    width: 100%
+    height: 100px
+    border-radius: 25px
+    background-color: #f0f2fa
+    padding: 19px 29px
+
+  .radio-btns
+    width: 100%
+    height: auto
+    display: flex
+    flex-flow: column
+    border-radius: 25px
+    background-color: #f0f2fa
+    padding: 18px 20px
+    margin-right: 0 !important
+    label
+      margin-bottom: 15px
+      &:last-of-type
+        margin-bottom: 0
+    input
+      margin-right: 10px
+
+select
+  -webkit-appearance: none
+  -moz-appearance: none
+  appearance: none
+.select
+  position: relative
+  display: inline-block
+  &:after
+    content: ''
+    position: absolute
+    top: 50%
+    right: 28px
+    width: 6px
+    height: 6px
+    transform: translateY(-50%) rotate(45deg)
+    border-right: 2px solid $dusk-blue
+    border-bottom: 2px solid $dusk-blue
+
+select > .placeholder
+  display: none
+
+label, input::placeholder, input.placeholder, select
+  font: 15px Montserrat-Regular
+  color: $dusk-blue
+
+input[type="text"],
+textarea,
+select
+  width: 100%
+  border-radius: 25px
+  background-color: #f0f2fa
+  padding: 19px 29px
+  border: none
+  outline: none
+select
+  padding: 0 29px !important
+  option:disabled
+    text-align: center
+
+label
+  position: relative
+
+input[type=checkbox]
+  width: 20px
+  height: 20px
+  position: absolute
+  z-index: -1
+  opacity: 0
+input[type=checkbox] + label
+  width: auto
+  position: relative
+  padding: 0 40px 0 38px
+  cursor: pointer
+  &:last-child
+    padding-right: 0
+  &:before
+    content: ""
+    display: inline-block
+    width: 20px
+    height: 20px
+    position: absolute
+    left: 0
+    top: 50%
+    transform: translateY(-50%)
+    border-radius: 5px
+    border: 1px solid #e6ebff
+input[type=checkbox]:checked + label:before
+  content: ''
+  position: absolute
+  left: 0
+  width: 20px
+  height: 20px
+  display: inline-block
+  border-radius: 5px
+  border: 1px solid #e6ebff
+
+input[type=checkbox]:checked + label:after
+  content: ''
+  position: absolute
+  top: 2px
+  left: 8px
+  width: 4px
+  height: 9px
+  transform: rotate(45deg)
+  border-right: 2px solid $weird-green
+  border-bottom: 2px solid $weird-green
+
+
+.wrap-chbx
+  margin: 37px 0
+
+.radio-btns
+  label
+    padding-left: 30px
+
+input[type=radio]
+  display: none
+  & + label:before
+    content: ""
+    width: 12px
+    height: 12px
+    background: #dfe0e7
+    border: 4px solid #ffffff
+    border-radius: 50%
+    display: inline-block
+    position: absolute
+    left: 0
+  &:checked + label:before
+    background: $dusty-orange
+
+
+
+/*
+ * File
+ */
+
+.file
+  position: relative
+  display: inline-block
+  cursor: pointer
+  input
+    margin: 0
+    filter: alpha(opacity=0)
+    opacity: 0
+  &-custom
+    width: 100%
+    height: 50px
+    position: absolute
+    top: 0
+    left: 0
+    z-index: 5
+    padding: 0 29px
+    display: flex
+    align-items: center
+    border-radius: 25%
+    user-select: none
+    &:after
+      content: "File uploade"
+    &:before
+      content: "Choose..."
+      position: absolute
+      height: 50px
+      width: 100%
+      max-width: 170px
+      right: 0
+      top: 0
+      z-index: 6
+      display: flex
+      justify-content: center
+      align-items: center
+      color: #ffffff
+      background-color: $dusty-orange
+      border-radius: 0 25px 25px 0
+
+
+/* Focus */
+//.file input:focus ~ .file-custom
+//  box-shadow: 0 0 0 .075rem #fff, 0 0 0 .2rem #0074d9
+
+.result
+  width: 100%
+  height: auto
+  display: flex
+  justify-content: center
+  align-items: center
+  text-align: center
+  font: 18px Montserrat-Medium
+  color: $greyish-brown
+  margin: 37px 0 23px
+  span
+    margin-right: 0
+  .result-caption
+    margin-right: 10px
+  .bad
+    color: #ec2727
+  .ok
+    color: $weird-green
+
+.form-btn
+  width: 100%
+  height: auto
+  display: flex
+  align-items: center
+  justify-content: center
+  margin-bottom: 41px
+.btn
+  width: 100%
+  max-width: 199px
+  height: 55px
+  display: flex
+  justify-content: center
+  align-items: center
+  color: #ffffff
+  background-color: $dusty-orange
+  border-radius: 25px
+  border: none
+  cursor: pointer
+
+
+.form-2
+  width: 100%
+  height: auto
+  form
+    width: 100%
+    height: auto
+    display: flex
+    flex-flow: row wrap
+    justify-content: space-between
+  .form-2__block
+    width: 100%
+    max-width: 568px
+    height: auto
+
+  .result,
+  .form-btn
+    width: 100%
+    height: auto
+
