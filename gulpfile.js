@@ -41,7 +41,7 @@ gulp.task('browser-sync', function () { // Создаем таск browser-sync
 gulp.task('scripts', function () {
   return gulp.src([ // Берем все необходимые библиотеки
     'libs/jquery/dist/jquery.min.js', // Берем jQuery
-    'libs/slick-carousel/slick/slick.min.js',
+    // 'libs/slick-carousel/slick/slick.min.js',
     // 'libs/magnific-popup/dist/jquery.magnific-popup.min.js',
     // 'libs/gsap/src/minified/TweenMax.min.js',
     // 'libs/wow/dist/wow.min.js',
@@ -61,8 +61,8 @@ gulp.task('css-libs', ['sass'], function () {
     // 'libs/wow/css/libs/animate.css',
     // 'libs/fullPage/jquery.fullpage.css',
     // 'libs/magnific-popup/dist/magnific-popup.css',
-    'libs/slick-carousel/slick/slick.css',
-    'libs/slick-carousel/slick/slick-theme.css',
+    // 'libs/slick-carousel/slick/slick.css',
+    // 'libs/slick-carousel/slick/slick-theme.css',
     // 'css/critical.css'
   ])
     .pipe(concat('libs.css'))
