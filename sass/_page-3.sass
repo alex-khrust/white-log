@@ -1,0 +1,120 @@
+.wrap-table
+  width: 100%
+  height: auto
+  margin-bottom: 39px
+#table-page-3
+  width: 100%
+  height: auto
+  border-collapse: collapse
+  thead
+    th
+      font: 15px Montserrat-Medium
+      color: #ffffff
+      background-color: $dusk-blue
+  th, td
+    height: 50px
+    text-align: center
+    &:first-of-type
+      border-radius: 10px 0 0 10px
+      padding: 0 40px 0 0
+    &:last-of-type
+      border-radius: 0 10px 10px 0
+  tbody
+    counter-reset: table-page-3-counter
+    td
+      font: 15px Montserrat-Regular
+      color: $greyish-brown
+    tr:nth-child(even)
+      background-color: #f6f8ff
+    td:first-of-type::before
+      content: counter(table-page-3-counter)
+      counter-increment: table-page-3-counter
+    tr
+      overflow: hidden
+      border-radius: 10px
+      cursor: pointer
+      &:hover
+        box-shadow: inset 0 0 10px 1px rgba(43, 63, 140, 0.25)
+        transition: .3s
+
+.yes
+  color: $weird-green
+.no
+  color: #ec2727
+
+
+
+.pagination,
+.pagination li a
+  display: flex
+  flex-wrap: wrap
+  justify-content: center
+  align-items: center
+
+
+.pagination li
+  width: auto
+  height: auto
+  padding-right: 12px
+  &:last-child
+    padding-right: 0
+
+.pagination a
+  width: 35px
+  height: 35px
+  display: flex
+  justify-content: center
+  align-items: center
+  font-weight: 300
+  font: 13px "Montserrat-Medium"
+  color: $dusk-blue
+  text-decoration: none
+  border-radius: 50%
+  background-color: #f0f2fa
+  box-shadow: inset 0 1px 0 0 rgba(255,255,255,.35)
+  position: relative
+
+
+.pagination li:not([class*="current"]) a:hover
+  //background-color: rgba(240, 116, 62, 1)
+  //color: #ffffff
+  box-shadow: 0 0 10px 1px rgba(0,0,0,.25)
+
+
+.pagination li:not([class*="current"]) a:focus,
+.pagination li:not([class*="current"]) a:active
+  box-shadow: 0 0 10px 0 rgba(0,0,0,.25)
+  border-left-width: 1px
+
+
+.pagination li:first-of-type span,
+.pagination li:last-of-type span,
+.pagination li:nth-of-type(2) span,
+.pagination li:nth-last-of-type(2) span
+  /* screen readers only */
+  position: absolute
+  top: -9999px
+  left: -9999px
+
+
+.pagination li:first-child a::before,
+.pagination li:last-child a::after
+  content: ''
+  position: absolute
+  //top: 50%
+  //right: 50%
+  width: 6px
+  height: 6px
+  transform: rotate(135deg)
+  border-right: 1px solid $dusk-blue
+  border-bottom: 1px solid $dusk-blue
+
+.pagination li:last-child a::after,
+.pagination li:nth-last-of-type(2) a::after
+  transform: rotate(315deg)
+
+.pagination li.current a
+  color: rgba(255,255,255,1)
+  background-color: $dusty-orange
+  cursor: default
+  pointer-events: none
