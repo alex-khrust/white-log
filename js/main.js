@@ -7,14 +7,16 @@ $(document).ready(function ()  {
   });
 // -----------------------------------------------------------------------
   // popup ---------------------------------------------
-  var elements1 = $('.affiliate, .affiliate>.modal');
+  var elements1 = $('.modal-overlay, .modal-overlay>.modal');
   
-  $('#affiliate').click(function(){
+  $('.report-btn').click(function(){
     elements1.addClass('active');
+    $('header, section').css({filter:"blur(4px)", transition:".3s"});
   });
   
   $('.close-modal').click(function(){
     elements1.removeClass('active');
+    $('header, section').css({filter:"none", transition:".3s"});
   });
 //-----------------------------------------------------------------------
 //Добавление и удаление классов по ширене экрана  ----------

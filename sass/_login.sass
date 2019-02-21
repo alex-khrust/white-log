@@ -1,0 +1,73 @@
+.login
+  width: 100%
+  height: auto
+  .container
+    display: flex
+    align-items: center
+  .logo
+    margin-top: 66px
+    img
+      width: auto
+      height: 84px
+
+  .title
+    width: 100%
+    max-width: 605px
+    height: auto
+    display: flex
+    flex-flow: column
+    align-items: center
+    text-align: center
+    h2
+      margin-bottom: 16px
+
+  form
+    width: 100%
+    max-width: 431px
+    height: auto
+    display: flex
+    flex-flow: column
+    align-items: center
+    p
+      width: 100%
+      height: auto
+      display: flex
+      flex-flow: column
+      align-items: center
+      input
+        height: 56px
+        width: 100%
+        border-radius: 27.5px
+        background-color: #e6ebff
+        padding: 0 44px
+        border: none
+        margin-bottom: 31px
+        font: 15px Montserrat-Regular
+        color: $dusk-blue
+        &::placeholder
+          color: #9194a1
+        &[type="password"]
+          background: #ffffff
+          border: 1px solid $dusty-orange
+          margin-bottom: 0
+          //font-size: 20px
+
+      span
+        width: inherit
+        max-width: inherit
+        margin-right: 0
+        position: relative
+        &.password:before
+          content: 'Password'
+          position: absolute
+          font: 15px Montserrat-Regular
+          color: $dusty-orange
+          background-color: #fff
+          padding: 0 5px
+          top: -10px
+          left: 39px
+    .btn
+      width: 220px
+      height: 56px
+      border-radius: 27.5px
+      margin-top: 46px

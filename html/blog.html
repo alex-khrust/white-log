@@ -14,12 +14,12 @@
   <link rel="stylesheet" href="../css/main.css">
 </head>
 
-<body>
+<body id="body">
 
 <header>
   <div class="container">
     <div class="logo">
-      <a href="#"><img src="../img/logo.jpg" alt="logo"></a>
+      <a href="login.html"><img src="../img/logo.jpg" alt="logo"></a>
     </div>
     <nav class="top-menu">
       <ul class="menu">
@@ -42,6 +42,7 @@
       <h2>Report Date</h2>
       <span class="report-date">###########</span>
     </div>
+    
     <!--table-1 --- start ----------->
     <div class="wrap-table">
       <table class="table-page-4__1" id="table-page-4__1">
@@ -51,7 +52,7 @@
           <th>Sterilizer Name</th>
           <th>Sterilizer Model</th>
           <th>Sterilizer SN</th>
-          <th rowspan="2" class="report-btn"><span><a href="">Operation Signature</a></span></th>
+          <th rowspan="2" class="report-btn"><span><a href="javascript:void(0);">Operation Signature</a></span></th>
         </tr>
         <tr>
           <td><span>1_10345_235</span></td>
@@ -175,7 +176,7 @@
           <th>Sterilizer Name</th>
           <th>Sterilizer Model</th>
           <th>Sterilizer SN</th>
-          <th rowspan="2" class="report-btn"><span><a href="">Operation Signature</a></span></th>
+          <th rowspan="2" class="report-btn"><span><a href="javascript:void(0);">Operation Signature</a></span></th>
         </tr>
         <tr>
           <td><span>1_10345_235</span></td>
@@ -289,8 +290,79 @@
       </div>
     </div>
     <!--table-2 --- end ----------->
+    
   </div>
 </section>
+
+<!-- modal windows -->
+<div class="modal-overlay">
+  <div class="modal">
+    
+    <div class="modal-content">
+      <div class="container">
+        <div class="title">
+          <h2>Title</h2>
+        </div>
+        <div class="modal-table">
+          <table>
+            <tr>
+              <th>Document ID:</th>
+              <th>Cycle ID:</th>
+              <th>Serilizator name:</th>
+              <th>Model:</th>
+              <th>Serial:</th>
+            <tr>
+              <td><span>1_10345_235</span></td>
+              <td><span>1_10345_235</span></td>
+              <td><span>1_10345_235</span></td>
+              <td><span>1_10345_235</span></td>
+              <td><span>1_10345_235</span></td>
+            </tr>
+            <tr>
+              <th>Operator ID:</th>
+              <th>Operator name:</th>
+              <th>Serilizator name:</th>
+              <th>Serilizator name:</th>
+              <th>Serilizator name:</th>
+            <tr>
+              <td><span>1_10345_235</span></td>
+              <td><span>1_10345_235</span></td>
+              <td><span>1_10345_235</span></td>
+              <td><span>1_10345_235</span></td>
+              <td><span>1_10345_235</span></td>
+            </tr>
+            <tr>
+              <th>Serilizator name:</th>
+              <th>Serilizator name:</th>
+              <th>Serilizator name:</th>
+              <th>Serilizator name:</th>
+              <th>Serilizator name:</th>
+            <tr>
+              <td><span>1_10345_235</span></td>
+              <td><span>1_10345_235</span></td>
+              <td><span>1_10345_235</span></td>
+              <td><span>1_10345_235</span></td>
+              <td><span>1_10345_235</span></td>
+            </tr>
+            <tr>
+              <th>Chamical pass: <span class="indicator"></span></th>
+              <th>Biological indicate: <span class="indicator"><img src="../img/vector-smart-object.png" alt=""></span></th>
+              <th></th>
+              <th></th>
+              <th></th>
+            </tr>
+          </table>
+          <div class="btns">
+            <a href="javascript:void(0);" class="close-modal btn">Close</a>
+            <a href="javascript:void(0);" class="btn">Detail</a>
+          </div>
+        </div>
+      </div>
+    </div><!-- content -->
+  
+  </div><!-- modal -->
+</div><!-- overlay -->
+<!-- close modal windows -->
 
 <script src="../js/libs.min.js"></script>
 <script src="../js/main.js"></script>
