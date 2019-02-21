@@ -870,6 +870,8 @@ input[type=radio] {
       -ms-flex-align: center;
       align-items: center;
       margin-bottom: 10px; }
+      .table-page-4__3 table tr:last-of-type {
+        margin-bottom: 0; }
     .table-page-4__3 table span {
       width: 149px;
       height: 40px;
