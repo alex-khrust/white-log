@@ -192,6 +192,18 @@
       padding-bottom: 8px
       font: 15px Montserrat-Medium
       color: $dusk-blue
+    .indicator
+      width: 170px
+      display: flex
+      justify-content: space-between
+      span
+        width: 18px
+        height: 18px
+        position: relative
+        img
+          position: absolute
+          right: 0
+          top: 2px
     td
       width: 170px
       padding-bottom: 35px
@@ -220,7 +232,7 @@
       margin: 0 15px
       border: 1px solid $dusty-orange
       transition: .3s
-      &:hover
+      &:hover, &.active
         border: 1px solid $dusk-blue
         background: #ffffff
         color: $dusk-blue
@@ -228,3 +240,27 @@
 
 
 
+.check
+  display: inline-block
+  width: 18px
+  height: 18px
+  position: absolute
+  left: 0
+  top: 50%
+  transform: translateY(-50%)
+  border-radius: 5px
+  border: 1px solid #e6ebff
+  &:after
+    content: ''
+    position: absolute
+    top: 2px
+    left: 6px
+    width: 3px
+    height: 7px
+    transform: rotate(45deg)
+    border-right: 2px solid $weird-green
+    border-bottom: 2px solid $weird-green
+  &.grey
+    background: #f0f2fa
+    &:after
+      border-color: #c5c9dc

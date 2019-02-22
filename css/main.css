@@ -934,6 +934,22 @@ input[type=radio] {
       padding-bottom: 8px;
       font: 15px Montserrat-Medium;
       color: #2b3d8d; }
+    .modal-table table .indicator {
+      width: 170px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between; }
+      .modal-table table .indicator span {
+        width: 18px;
+        height: 18px;
+        position: relative; }
+        .modal-table table .indicator span img {
+          position: absolute;
+          right: 0;
+          top: 2px; }
     .modal-table table td {
       width: 170px;
       padding-bottom: 35px;
@@ -972,10 +988,37 @@ input[type=radio] {
       border: 1px solid #f0743e;
       -webkit-transition: .3s;
       transition: .3s; }
-      .modal-table .btns .btn:hover {
+      .modal-table .btns .btn:hover, .modal-table .btns .btn.active {
         border: 1px solid #2b3d8d;
         background: #ffffff;
         color: #2b3d8d; }
+
+.check {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  border-radius: 5px;
+  border: 1px solid #e6ebff; }
+  .check:after {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 6px;
+    width: 3px;
+    height: 7px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    border-right: 2px solid #47d881;
+    border-bottom: 2px solid #47d881; }
+  .check.grey {
+    background: #f0f2fa; }
+    .check.grey:after {
+      border-color: #c5c9dc; }
 
 /**
  * Variables
