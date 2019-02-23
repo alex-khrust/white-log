@@ -76,7 +76,8 @@ input:focus {
 
 header {
   height: 70px;
-  border-bottom: 1px solid #f1f1f1; }
+  border-bottom: 1px solid #f1f1f1;
+  z-index: 10; }
   header .container {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
@@ -1473,13 +1474,28 @@ input[type=radio] {
     max-width: 100% !important;
     max-height: 100% !important;
     border-radius: 0; }
-    .modal .modal-content .container {
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      align-items: center;
+    .modal .modal-table {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
       -webkit-box-pack: center;
       -ms-flex-pack: center;
-      justify-content: center; } }
+      justify-content: center;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+      flex-flow: column;
+      padding: 0 0;
+      min-width: 740px; }
+      .modal .modal-table table {
+        overflow-x: auto; }
+        .modal .modal-table table th {
+          width: 135px; }
+        .modal .modal-table table td {
+          width: 135px; }
+          .modal .modal-table table td span {
+            width: 135px;
+            height: 31px; } }
 
 @media (max-width: 768px) {
   header {
