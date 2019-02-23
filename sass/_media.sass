@@ -67,23 +67,25 @@
     max-width: 100% !important
     max-height: 100% !important
     border-radius: 0
-    .modal-content
     .modal-table
       display: flex
       justify-content: center
       flex-flow: column
       padding: 0 0
-      min-width: 740px
       table
-        overflow-x: auto
         th
           width: 135px
-          //margin-bottom: 9px
         td
           width: 135px
+          margin-bottom: 20px
           span
             width: 135px
             height: 31px
+      .indicators
+        //flex-flow: column
+        align-items: center
+        justify-content: center
+
 
 
 
@@ -148,7 +150,7 @@
 
 @media (max-width: 600px)
   //all -----------------
-  th
+  th, .indicators__item
     font-size: 14px
   td
     font-size: 13px
@@ -177,7 +179,7 @@
     .wrap-table
       overflow-x: scroll
     table
-      min-width: 600px
+      min-width: 800px
 
   //---------------------
   //page-4 --------------
@@ -258,3 +260,34 @@
         img
           height: 25px
           margin-right: 10px
+
+
+@media (max-width: 950px)
+  header
+    z-index: 0
+  //modal ----------------------
+  .modal
+    max-width: 100% !important
+    max-height: 100% !important
+    border-radius: 0
+    .modal-content
+      .title
+        margin: 20px 0 10px 0
+    .modal-table
+      display: flex
+      justify-content: center
+      flex-flow: column
+      padding: 0 0
+      //min-width: 740px
+      table
+        width: 135px
+        height: auto
+        overflow-y: auto
+        th
+        td
+          margin-bottom: 20px
+      .indicators
+        //flex-flow: column
+        align-items: center
+        justify-content: center
+  //----------------------------
