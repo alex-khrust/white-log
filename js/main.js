@@ -4,6 +4,10 @@ $(document).ready(function ()  {
   $('.hamburger').click(function() {
     $(this).toggleClass('active');
     $('nav').toggleClass('open');
+    $('nav a').click(function () {
+      $('.hamburger').removeClass('active');
+      $('nav').removeClass('open');
+    });
   });
 // -----------------------------------------------------------------------
   // popup ---------------------------------------------
@@ -20,14 +24,31 @@ $(document).ready(function ()  {
   });
 //-----------------------------------------------------------------------
 //Добавление и удаление классов по ширене экрана  ----------
+  var width = 768;
   var windowWidth = $(window).width();
-  if (windowWidth < 1170) $("header").addClass("mob-menu");
-  else $("header").removeClass("mob-menu");
+  if (windowWidth < width) {
+    $("header").addClass("mob-menu");
+    // $("nav").hide();
+    // $(".hamburger").show();
+  }
+  else {
+    $("header").removeClass("mob-menu");
+    // $("nav").show();
+    // $(".hamburger").hide();
+  }
 
   $(window).resize(function () {
     var windowWidth = $(window).width();
-    if (windowWidth < 1170) $("header").addClass("mob-menu");
-    else $("header").removeClass("mob-menu");
+    if (windowWidth < width) {
+      $("header").addClass("mob-menu");
+      // $("nav").hide();
+      // $(".hamburger").show();
+    }
+    else {
+      $("header").removeClass("mob-menu");
+      // $("nav").show();
+      // $(".hamburger").hide();
+    }
   });
   //----------------------------------------------------------
 //Стилизация #form_popup input[type='file'] --------------
