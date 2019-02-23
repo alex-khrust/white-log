@@ -143,7 +143,8 @@ nav {
 
 .mob-menu {
   position: fixed;
-  background: #ffffff; }
+  background: #ffffff;
+  z-index: 10; }
   .mob-menu .container {
     padding: 0; }
   .mob-menu .logo, .mob-menu .hamburger {
