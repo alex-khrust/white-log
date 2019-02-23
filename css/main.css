@@ -178,6 +178,8 @@ nav {
       justify-content: space-evenly;
       background: #f0f2fa;
       border-bottom: 2px solid #f0743e; }
+    .mob-menu nav a {
+      font: bold 15px Montserrat-Bold; }
     .mob-menu nav a.active:before, .mob-menu nav a:hover:before {
       display: none; }
 
